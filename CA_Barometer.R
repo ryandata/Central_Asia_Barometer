@@ -1,8 +1,16 @@
+# Data Analysis of Central Asia Barometer Data 
+# Ryan Womack
+# first developed for presentation at 
+# American University of Central Asia
+# Spring 2026
+
 # study our data
 # the questionnaire
 # the codebook
 
 # loading data 
+# note download data from CA Barometer at
+# https://ca-barometer.org/assets/files/projects/cab-survey-wave-12-excel-kyrgyzstan-kyrgyzstan-2022-autumn.xlsx
 
 setwd("/home/ryan/R/")
 library(readxl)
