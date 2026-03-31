@@ -21,9 +21,7 @@ format:
   docx: default
 theme: cyborg
 include-in-header: 
-  text: |
-    \usepackage{fvextra}
-    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  text:     |
     
 ---
 
@@ -315,10 +313,10 @@ summary(logistic_output)
 
 # Заключение
 
-В анализе данных нет единой точки остановки. Продолжайте, пока не получите полное понимание данных и их взаимодействия с вопросами, на которые вы пытаетесь ответить. Во второй части этой серии семинаров, [Барометр Центральной Азии 2](https://ryanwomack.com/data_topics/central_asia_barometer_1/CA_Barometer_2.html), будут рассмотрены более сложные методы и комбинации данных.
+В анализе данных нет единой точки остановки. Продолжайте, пока не получите полное понимание данных и их взаимодействия с вопросами, на которые вы пытаетесь ответить. Во второй части этой серии семинаров, [Барометр Центральной Азии 2](https://ryanwomack.com/data_topics/central_asia_barometer_2/CA_Barometer_2.html), будут рассмотрены более сложные методы и комбинации данных.
 
 Дополнительные сведения о методах анализа данных см. в разделах [Анализ данных 1](https://www.ryanwomack.com/data_topics/data_analysis_1/data_analysis_1.html) и [Анализ данных 2](https://www.ryanwomack.com/data_topics/data_analysis_2/data_analysis_2.html).
 
 ## R для анализа данных [книга _R for Data Science_]
 
-Для получения дополнительной информации об обработке данных обратитесь к книге «R for Data Science» (https://r4ds.hadley.nz/). Также ознакомьтесь с пакетом tidymodels (https://www.tidymodels.org/), предназначенным для моделирования и машинного обучения с использованием принципов tidyverse.
+Для получения дополнительной информации об обработке данных обратитесь к книге [R for Data Science](https://r4ds.hadley.nz/). Также ознакомьтесь с пакетом [tidymodels](https://www.tidymodels.org/), предназначенным для моделирования и машинного обучения с использованием принципов tidyverse.

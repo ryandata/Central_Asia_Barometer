@@ -22,8 +22,7 @@ format:
 theme: cyborg
 include-in-header: 
   text: |
-    \usepackage{fvextra}
-    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+    
 ---
 
 ```{r setup, include=FALSE}
@@ -312,7 +311,7 @@ Question G3b - _"Attitude toward President Japarov?"_ what breakdowns would be i
 
 # Conclusion
 
-There is no one stopping point for data analysis. Keep going until you have a full understanding of the data and its interaction with the questions you seek to answer.  The second part of this workshop series, [Central Asia Barometer 2](https://ryanwomack.com/data_topics/central_asia_barometer_1/CA_Barometer_2.html), will illustrate more advanced methods and combinations of data.
+There is no one stopping point for data analysis. Keep going until you have a full understanding of the data and its interaction with the questions you seek to answer.  The second part of this workshop series, [Central Asia Barometer 2](https://ryanwomack.com/data_topics/central_asia_barometer_2/CA_Barometer_2.html), will illustrate more advanced methods and combinations of data.
 
 See [Data Analysis 1](https://www.ryanwomack.com/data_topics/data_analysis_1/data_analysis_1.html) and [Data Analysis 2](https://www.ryanwomack.com/data_topics/data_analysis_2/data_analysis_2.html) for further discussion of data analysis techniques.
 

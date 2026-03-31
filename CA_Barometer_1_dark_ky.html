@@ -9,7 +9,7 @@
 <meta name="author" content="Ryan Womack">
 <meta name="dcterms.date" content="2026-03-31">
 
-<title>Анализ данных Барометра Центральной Азии</title>
+<title>Борбордук Азия Барометринин маалыматтарын талдоо</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,18 +60,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="CA_Barometer_1_dark_ru_files/libs/clipboard/clipboard.min.js"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/quarto.js" type="module"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/popper.min.js"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="CA_Barometer_1_dark_ru_files/libs/quarto-html/anchor.min.js"></script>
-<link href="CA_Barometer_1_dark_ru_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="CA_Barometer_1_dark_ru_files/libs/quarto-html/quarto-syntax-highlighting-dark-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="CA_Barometer_1_dark_ru_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="CA_Barometer_1_dark_ru_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="CA_Barometer_1_dark_ru_files/libs/bootstrap/bootstrap-5e521cc435542587c10154c8f161752b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="CA_Barometer_1_dark_ky_files/libs/clipboard/clipboard.min.js"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/popper.min.js"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="CA_Barometer_1_dark_ky_files/libs/quarto-html/anchor.min.js"></script>
+<link href="CA_Barometer_1_dark_ky_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="CA_Barometer_1_dark_ky_files/libs/quarto-html/quarto-syntax-highlighting-dark-95f147d06fdb9f8ce149f95e323965f4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="CA_Barometer_1_dark_ky_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="CA_Barometer_1_dark_ky_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="CA_Barometer_1_dark_ky_files/libs/bootstrap/bootstrap-5e521cc435542587c10154c8f161752b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 
 
 
@@ -85,53 +85,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#обзор" id="toc-обзор" class="nav-link active" data-scroll-target="#обзор"><span class="header-section-number">1</span> Обзор</a>
+  <li><a href="#жалпы-маалымат" id="toc-жалпы-маалымат" class="nav-link active" data-scroll-target="#жалпы-маалымат"><span class="header-section-number">1</span> Жалпы маалымат</a>
   <ul class="collapse">
-  <li><a href="#определения" id="toc-определения" class="nav-link" data-scroll-target="#определения"><span class="header-section-number">1.1</span> Определения</a></li>
+  <li><a href="#аныктамалар" id="toc-аныктамалар" class="nav-link" data-scroll-target="#аныктамалар"><span class="header-section-number">1.1</span> Аныктамалар</a></li>
   </ul></li>
-  <li><a href="#установка" id="toc-установка" class="nav-link" data-scroll-target="#установка"><span class="header-section-number">2</span> Установка</a>
+  <li><a href="#орнотуу" id="toc-орнотуу" class="nav-link" data-scroll-target="#орнотуу"><span class="header-section-number">2</span> Орнотуу</a>
   <ul class="collapse">
-  <li><a href="#r-помощь" id="toc-r-помощь" class="nav-link" data-scroll-target="#r-помощь"><span class="header-section-number">2.1</span> R помощь</a></li>
+  <li><a href="#r-жардамы" id="toc-r-жардамы" class="nav-link" data-scroll-target="#r-жардамы"><span class="header-section-number">2.1</span> R жардамы</a></li>
   </ul></li>
-  <li><a href="#настройка-и-подготовка-данных" id="toc-настройка-и-подготовка-данных" class="nav-link" data-scroll-target="#настройка-и-подготовка-данных"><span class="header-section-number">3</span> Настройка и подготовка данных</a>
+  <li><a href="#маалыматтарды-даярдоо-жана-орнотуу" id="toc-маалыматтарды-даярдоо-жана-орнотуу" class="nav-link" data-scroll-target="#маалыматтарды-даярдоо-жана-орнотуу"><span class="header-section-number">3</span> Маалыматтарды даярдоо жана орнотуу</a>
   <ul class="collapse">
-  <li><a href="#необходимые-пакеты-r" id="toc-необходимые-пакеты-r" class="nav-link" data-scroll-target="#необходимые-пакеты-r"><span class="header-section-number">3.1</span> Необходимые пакеты R</a></li>
-  <li><a href="#версии" id="toc-версии" class="nav-link" data-scroll-target="#версии"><span class="header-section-number">3.2</span> Версии</a></li>
-  <li><a href="#кыргызский-и-русский-языки" id="toc-кыргызский-и-русский-языки" class="nav-link" data-scroll-target="#кыргызский-и-русский-языки"><span class="header-section-number">3.3</span> Кыргызский и русский языки</a></li>
-  <li><a href="#поддержка-python" id="toc-поддержка-python" class="nav-link" data-scroll-target="#поддержка-python"><span class="header-section-number">3.4</span> поддержка Python</a></li>
+  <li><a href="#керектүү-r-пакеттери" id="toc-керектүү-r-пакеттери" class="nav-link" data-scroll-target="#керектүү-r-пакеттери"><span class="header-section-number">3.1</span> Керектүү R пакеттери</a></li>
+  <li><a href="#версиялар" id="toc-версиялар" class="nav-link" data-scroll-target="#версиялар"><span class="header-section-number">3.2</span> Версиялар</a></li>
+  <li><a href="#кыргыз-жана-орус-тилдеринде" id="toc-кыргыз-жана-орус-тилдеринде" class="nav-link" data-scroll-target="#кыргыз-жана-орус-тилдеринде"><span class="header-section-number">3.3</span> Кыргыз жана орус тилдеринде</a></li>
+  <li><a href="#python-колдоосу" id="toc-python-колдоосу" class="nav-link" data-scroll-target="#python-колдоосу"><span class="header-section-number">3.4</span> Python колдоосу</a></li>
   </ul></li>
-  <li><a href="#барометр-центральной-азии" id="toc-барометр-центральной-азии" class="nav-link" data-scroll-target="#барометр-центральной-азии"><span class="header-section-number">4</span> Барометр Центральной Азии</a>
+  <li><a href="#борбордук-азия-барометри" id="toc-борбордук-азия-барометри" class="nav-link" data-scroll-target="#борбордук-азия-барометри"><span class="header-section-number">4</span> Борбордук Азия Барометри</a>
   <ul class="collapse">
-  <li><a href="#понимание-данных" id="toc-понимание-данных" class="nav-link" data-scroll-target="#понимание-данных"><span class="header-section-number">4.1</span> Понимание данных</a></li>
+  <li><a href="#маалыматтарды-түшүнүү" id="toc-маалыматтарды-түшүнүү" class="nav-link" data-scroll-target="#маалыматтарды-түшүнүү"><span class="header-section-number">4.1</span> Маалыматтарды түшүнүү</a></li>
   </ul></li>
-  <li><a href="#загрузка-и-импорт-данных" id="toc-загрузка-и-импорт-данных" class="nav-link" data-scroll-target="#загрузка-и-импорт-данных"><span class="header-section-number">5</span> Загрузка и импорт данных</a></li>
-  <li><a href="#обработка-данных" id="toc-обработка-данных" class="nav-link" data-scroll-target="#обработка-данных"><span class="header-section-number">6</span> Обработка данных</a>
+  <li><a href="#маалыматтарды-жүктөө-жана-импорттоо" id="toc-маалыматтарды-жүктөө-жана-импорттоо" class="nav-link" data-scroll-target="#маалыматтарды-жүктөө-жана-импорттоо"><span class="header-section-number">5</span> Маалыматтарды жүктөө жана импорттоо</a></li>
+  <li><a href="#маалыматтарды-иштетүү" id="toc-маалыматтарды-иштетүү" class="nav-link" data-scroll-target="#маалыматтарды-иштетүү"><span class="header-section-number">6</span> Маалыматтарды иштетүү</a>
   <ul class="collapse">
-  <li><a href="#выбор-и-наименование" id="toc-выбор-и-наименование" class="nav-link" data-scroll-target="#выбор-и-наименование"><span class="header-section-number">6.1</span> Выбор и наименование</a></li>
-  <li><a href="#описательная-статистика" id="toc-описательная-статистика" class="nav-link" data-scroll-target="#описательная-статистика"><span class="header-section-number">6.2</span> Описательная статистика</a></li>
-  <li><a href="#перекодирование-данных" id="toc-перекодирование-данных" class="nav-link" data-scroll-target="#перекодирование-данных"><span class="header-section-number">6.3</span> Перекодирование данных</a></li>
+  <li><a href="#тандоо-жана-ат-коюу" id="toc-тандоо-жана-ат-коюу" class="nav-link" data-scroll-target="#тандоо-жана-ат-коюу"><span class="header-section-number">6.1</span> Тандоо жана ат коюу</a></li>
+  <li><a href="#сүрөттөмө-статистика" id="toc-сүрөттөмө-статистика" class="nav-link" data-scroll-target="#сүрөттөмө-статистика"><span class="header-section-number">6.2</span> Сүрөттөмө статистика</a></li>
+  <li><a href="#маалыматтарды-кайра-коддоо" id="toc-маалыматтарды-кайра-коддоо" class="nav-link" data-scroll-target="#маалыматтарды-кайра-коддоо"><span class="header-section-number">6.3</span> Маалыматтарды кайра коддоо</a></li>
   </ul></li>
-  <li><a href="#графики---визуализация-данных" id="toc-графики---визуализация-данных" class="nav-link" data-scroll-target="#графики---визуализация-данных"><span class="header-section-number">7</span> Графики - Визуализация данных</a>
+  <li><a href="#графика---маалыматтарды-визуалдаштыруу" id="toc-графика---маалыматтарды-визуалдаштыруу" class="nav-link" data-scroll-target="#графика---маалыматтарды-визуалдаштыруу"><span class="header-section-number">7</span> Графика - Маалыматтарды визуалдаштыруу</a>
   <ul class="collapse">
-  <li><a href="#иллюстративные-графики" id="toc-иллюстративные-графики" class="nav-link" data-scroll-target="#иллюстративные-графики"><span class="header-section-number">7.1</span> Иллюстративные графики</a></li>
+  <li><a href="#иллюстрациялык-графика" id="toc-иллюстрациялык-графика" class="nav-link" data-scroll-target="#иллюстрациялык-графика"><span class="header-section-number">7.1</span> Иллюстрациялык графика</a></li>
   </ul></li>
-  <li><a href="#дальнейший-статистический-анализ" id="toc-дальнейший-статистический-анализ" class="nav-link" data-scroll-target="#дальнейший-статистический-анализ"><span class="header-section-number">8</span> Дальнейший статистический анализ</a>
+  <li><a href="#андан-ары-статистикалык-талдоо" id="toc-андан-ары-статистикалык-талдоо" class="nav-link" data-scroll-target="#андан-ары-статистикалык-талдоо"><span class="header-section-number">8</span> Андан ары статистикалык талдоо</a>
   <ul class="collapse">
-  <li><a href="#логистическая-регрессия" id="toc-логистическая-регрессия" class="nav-link" data-scroll-target="#логистическая-регрессия"><span class="header-section-number">8.1</span> Логистическая регрессия</a></li>
+  <li><a href="#логистикалык-регрессия" id="toc-логистикалык-регрессия" class="nav-link" data-scroll-target="#логистикалык-регрессия"><span class="header-section-number">8.1</span> Логистикалык регрессия</a></li>
   </ul></li>
-  <li><a href="#другие-возможности" id="toc-другие-возможности" class="nav-link" data-scroll-target="#другие-возможности"><span class="header-section-number">9</span> Другие возможности</a></li>
-  <li><a href="#заключение" id="toc-заключение" class="nav-link" data-scroll-target="#заключение"><span class="header-section-number">10</span> Заключение</a>
+  <li><a href="#башка-варианттар" id="toc-башка-варианттар" class="nav-link" data-scroll-target="#башка-варианттар"><span class="header-section-number">9</span> Башка варианттар</a></li>
+  <li><a href="#жыйынтык" id="toc-жыйынтык" class="nav-link" data-scroll-target="#жыйынтык"><span class="header-section-number">10</span> Жыйынтык</a>
   <ul class="collapse">
-  <li><a href="#r-для-анализа-данных-книга-r-for-data-science" id="toc-r-для-анализа-данных-книга-r-for-data-science" class="nav-link" data-scroll-target="#r-для-анализа-данных-книга-r-for-data-science"><span class="header-section-number">10.1</span> R для анализа данных [книга <em>R for Data Science</em>]</a></li>
+  <li><a href="#маалымат-таануу-үчүн-r-китеп-r-for-data-science" id="toc-маалымат-таануу-үчүн-r-китеп-r-for-data-science" class="nav-link" data-scroll-target="#маалымат-таануу-үчүн-r-китеп-r-for-data-science"><span class="header-section-number">10.1</span> Маалымат таануу үчүн R [китеп <em>R for Data Science</em>]</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="CA_Barometer_1_dark_ru.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="CA_Barometer_1_dark_ru.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="CA_Barometer_1_dark_ky.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="CA_Barometer_1_dark_ky.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Анализ данных Барометра Центральной Азии</h1>
+<h1 class="title">Борбордук Азия Барометринин маалыматтарын талдоо</h1>
 </div>
 
 
@@ -160,43 +160,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Copyright Ryan Womack, 2026. Данная работа распространяется под лицензией <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
-<p><strong>Анализ данных Барометра Центральной Азии</strong></p>
-<p><em>Обработка данных, разведочный анализ данных и визуализация данных Центральноазиатского Барометра.</em></p>
-<p><em>первоначально разработано для презентации на <a href="https://auca.kg">Американский Университет Центральной Азии</a>, Весна 2026</em></p>
-<p>[Обратите внимание: русский текст переведен с английского с помощью машинного перевода]</p>
-<section id="обзор" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Обзор</h1>
-<p>Этот семинар посвящен работе с данными, начиная с основ импорта и подготовки данных и заканчивая описательной статистикой, базовым анализом и визуализацией данных. Программирование ведется преимущественно на языке R, но также используются некоторые примеры на Python. И R, и Python — отличные инструменты для анализа данных, поэтому в некоторой степени ваш выбор зависит от предпочтений и уровня знакомства с языком. Язык R возник из области статистики и дополнил ее вычислительными функциями, в то время как Python — это универсальный язык программирования, к которому были добавлены значительные возможности статистического анализа.</p>
-<section id="определения" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="определения"><span class="header-section-number">1.1</span> Определения</h2>
-<p><em>Статистика</em> — это широкая область, предоставляющая строгие инструменты для анализа данных с помощью математики. Хотя мы можем рассматривать <em>машинное обучение</em> как тему информатики, фундаментальная теория машинного обучения в основном основана на статистике. Машинное обучение (МL) относится ко многим возможным методам использования вычислительных ресурсов на основе математических моделей для понимания данных и прогнозирования на их основе. <em>Искусственный интеллект</em> (AI) также является частью машинного обучения, и до роста популярности <em>генеративного AI</em> (Generative AI) AI/ML обычно обозначали широкий набор аналитических методов. Генеративный AI (GenAI) в более узком смысле относится к ИИ, который делает вероятностные предположения на основе больших объемов обучающих данных, обычно используя <em>большие языковые модели</em> (LLM). Поскольку GenAI не обеспечивает воспроизводимых результатов, он не так полезен для получения надежных результатов исследований. <em>Vibe coding</em>, программирование с использованием GenAI, или разработка компьютерного кода и синтаксиса, может иметь некоторые применения, но его сложно использовать без базового понимания соответствующих языков программирования. В случае текущих проектов, требующих постоянных изменений в расширяющейся кодовой базе, GenAI хуже справляется с созданием кода, который не меняет структуру проекта.</p>
+<p>Copyright Ryan Womack, 2026. Бул эмгек <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> лицензиясынын алкагында таратылат.</p>
+<p><strong>Борбордук Азия Барометринин маалыматтарын талдоо</strong></p>
+<p><em>Борбордук Азия Барометринин маалыматтарын иштетүү, чалгындоочу маалыматтарды талдоо жана маалыматтарды визуалдаштыруу.</em></p>
+<p><em>башында Борбордук Азиядагы Америка Университетинде презентациялоо үчүн иштелип чыккан(https://auca.kg), Жаз 2026</em></p>
+<p>[Эскертүү: кыргызча текст машиналык котормо аркылуу англис тилинен которулду.]</p>
+<section id="жалпы-маалымат" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Жалпы маалымат</h1>
+<p>Бул семинар маалыматтарды импорттоонун жана даярдоонун негиздеринен тартып, сүрөттөмө статистикасына, негизги анализге жана маалыматтарды визуализациялоого чейин маалыматтар менен иштөөнү камтыйт. Программалоо негизинен R тилинде жүргүзүлөт, бирок Pythonдун кээ бир мисалдары да камтылган. R жана Python экөө тең маалыматтарды талдоо үчүн эң сонун куралдар, андыктан тандооңуз кандайдыр бир деңгээлде сиздин каалоолоруңузга жана тил менен тааныштыгыңызга жараша болот. R статистикадан келип чыккан жана ага эсептөө функцияларын кошкон, ал эми Python - бул статистикалык анализдин олуттуу мүмкүнчүлүктөрүн кошкон жалпы максаттагы программалоо тили.</p>
+<section id="аныктамалар" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="аныктамалар"><span class="header-section-number">1.1</span> Аныктамалар</h2>
+<p><em>Статистика</em> — Бул математиканы колдонуп маалыматтарды талдоо үчүн так куралдарды сунуштаган кеңири тармак. <em>Машиналык окутууну</em> темасы катары кабыл алышыбыз мүмкүн, бирок машиналык окутуунун фундаменталдык теориясы көбүнчө статистикага негизделген. Машиналык окутуу (ML) маалыматтарды түшүнүү жана алардын негизинде божомолдорду жасоо үчүн математикалык моделдерге негизделген эсептөө ресурстарын колдонуунун көптөгөн мүмкүн болгон ыкмаларын билдирет. <em>Жасалма интеллект</em> (AI) дагы машиналык окутуунун бир бөлүгү болуп саналат жана <em>генеративдик AI</em> пайда болгонго чейин, AI/ML адатта аналитикалык ыкмалардын кеңири жыйындысын билдирген. Генеративдик жасалма интеллект (GenAI) тар мааниде чоң көлөмдөгү окутуу маалыматтарына негизделген, адатта <em>чоң тил моделдерин</em> (LLM) колдонгон ыктымалдуулук божомолдорун жасаган жасалма интеллектти билдирет. GenAI кайталануучу натыйжаларды бербегендиктен, ал ишенимдүү изилдөө жыйынтыктарын алуу үчүн анчалык деле пайдалуу эмес. <em>Vibe coding</em>, программаларды колдонуу GenAI, же разработка компьютерного код жана синтаксиса, мүмкүн иметь некоторые применения, бирок его сложно использовать без базового понимания соответствующих языков программирование. Кеңейип жаткан код базасына тынымсыз өзгөртүүлөрдү киргизүүнү талап кылган уланып жаткан долбоорлор үчүн GenAI долбоордун түзүмүн өзгөртпөгөн кодду түзүүдө анчалык ийгиликтүү эмес.</p>
 </section>
 </section>
-<section id="установка" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Установка</h1>
-<p>Данный семинар <em>не</em> охватывает установку R и RStudio, но предполагает наличие у вас рабочей копии этих программ.</p>
-<p><em>R</em> — это программное обеспечение с открытым исходным кодом для статистического анализа, доступное по адресу <a href="https://r-project.org">R-project.org</a>. Рекомендуется сначала установить R. Команды R можно выполнять во многих редакторах и IDE, непосредственно в терминале или через скриптовые файлы. Однако один из самых мощных и распространенных методов, который мы будем использовать здесь, — это использование IDE RStudio.</p>
-<p><em>RStudio</em>, доступный на <a href="https://posit.co">Posit</a> в виде <a href="https://posit.co/download/rstudio-desktop/">загрузки с открытым исходным кодом</a>, — это инструмент для создания и запуска кода на языке R (а также на Python и нескольких других языках), обладающий множеством полезных функций и шаблонов для работы с другими форматами и инструментами в экосистеме R. RStudio будет использовать установленную вами версию R, работая как надстройка над ней. Posit также разрабатывает <a href="https://posit.co/products/ide/positron/">Positron</a> — более новую IDE с большей гибкостью для работы с R, Python и другими возможными языками. В этом мастер-классе не используется Positron, хотя код должен работать и там.</p>
-<p>И RStudio, и Positron внедряют в свои интерфейсы инструменты подсказок на основе искусственного интеллекта, которые, как утверждается, работают с конкретным кодом вашего проекта и понимают его. Их следует предпочитать использованию сторонних сервисов, таких как ChatGPT.</p>
-<p>Для немедленного использования без установки попробуйте следующее:</p>
+<section id="орнотуу" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Орнотуу</h1>
+<p>Бул семинар R жана RStudio программаларын орнотууну камтыбайт, бирок сизде бул программалардын иштеп жаткан көчүрмөсү бар деп болжолдойт.</p>
+<p><em>R</em> - статистикалык анализ үчүн ачык булактуу программалык камсыздоо, аны <a href="https://r-project.org">R-project.org</a> дарегинен тапса болот. Алгач R орнотуу сунушталат. R буйруктарын көптөгөн редакторлордо жана IDEлерде, түздөн-түз терминалда же скрипт файлдары аркылуу аткарууга болот. Бирок, биз бул жерде колдоно турган эң күчтүү жана кеңири таралган ыкмалардын бири - RStudio IDE.</p>
+<p><em>RStudio</em>, <a href="https://posit.co">Posit</a> сайтынан <a href="https://posit.co/download/rstudio-desktop/">ачык булактуу жүктөп алуу</a> катары жеткиликтүү, R тилинде (ошондой эле Python жана башка бир нече тилдерде) код жазуу жана иштетүү үчүн курал болуп саналат, R экосистемасындагы башка форматтар жана куралдар менен иштөө үчүн көптөгөн пайдалуу функциялары жана шаблондору бар. RStudio сиз орноткон R версиясын колдонот, анын үстүндө катмар катары иштейт. Posit ошондой эле R, Python жана башка мүмкүн болгон тилдер менен иштөө үчүн көбүрөөк ийкемдүүлүккө ээ жаңы IDE болгон <a href="https://posit.co/products/ide/positron/">Positron</a> иштеп чыгууда. Бул семинарда Positron колдонулбайт, бирок код ал жерде да иштеши керек.</p>
+<p>RStudio жана Positron экөө тең долбооруңуздун белгилүү бир коду менен иштейбиз жана түшүнөбүз деп ырастаган AI менен иштеген сунуштоо куралдарын интерфейстерине интеграциялашат. Булар ChatGPT сыяктуу үчүнчү тараптын кызматтарына караганда артыкчылыктуу болушу керек.</p>
+<p>Орнотпостон дароо колдонуу үчүн төмөнкүлөрдү колдонуп көрүңүз:</p>
 <ul>
-<li><a href="https://posit.cloud">Posit Cloud</a> — это также бесплатный сервис, позволяющий использовать RStudio (с некоторыми ограничениями по времени и памяти) после создания учетной записи.</li>
+<li><a href="https://posit.cloud">Posit Cloud</a> ошондой эле аккаунт түзгөндөн кийин RStudio’ну (убакыт жана эс тутум чектөөлөрү менен) колдонууга мүмкүндүк берген акысыз кызмат.</li>
 </ul>
-<p>Более подробную информацию можно найти в видеоролике <a href="https://www.youtube.com/watch?v=ifOCC-9V_y0">Начало работы с R</a> (или в других веб-уроках и руководствах).</p>
-<p><a href="https://www.python.org/">Python</a> также является языком с открытым исходным кодом и может использоваться с различными редакторами и инструментами, которые здесь не описаны подробно.</p>
-<section id="r-помощь" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="r-помощь"><span class="header-section-number">2.1</span> R помощь</h2>
-<p>Система справки R легкодоступна. Используйте вопросительный знак перед именем конкретной функции, чтобы открыть ее страницу руководства ( <em>?sample</em> или <em>?rnorm</em>). Используйте два вопросительных знака для поиска. Вкладка «Справка» в правом нижнем углу RStudio также предоставляет полный доступ к встроенной справке, включая руководства и поиск.</p>
-<p>Поиск в интернете справки по R может быть полезен, поскольку существует множество руководств, статей в блогах и других материалов по общим методам и конкретным пакетам R. Полезно добавить к поисковому запросу что-то вроде «статистика R», «программное обеспечение R» или «пакет R», чтобы отличать его от всех других случаев использования буквы R!</p>
+<p>Көбүрөөк маалымат алуу үчүн, <a href="https://www.youtube.com/watch?v=ifOCC-9V_y0">R менен баштоо</a> видеосун (же башка веб-окуу куралдарын жана колдонмолорду) көрүңүз.</p>
+<p><a href="https://www.python.org/">Python</a> дагы ачык булактуу тил болуп саналат жана бул жерде кеңири сүрөттөлгөн эмес ар кандай редакторлор жана куралдар менен колдонулушу мүмкүн.</p>
+<section id="r-жардамы" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="r-жардамы"><span class="header-section-number">2.1</span> R жардамы</h2>
+<p>Система справки R легкодоступна. Белгилүү бир функциянын аталышынын алдындагы суроо белгисин колдонуп, анын колдонмо барагын ачыңыз (<em>?sample</em> же <em>?rnorm</em>). Издөө үчүн эки суроо белгисин колдонуңуз. RStudio программасынын төмөнкү оң бурчундагы “Жардам” өтмөгү ошондой эле окуу куралдарын жана издөөнү кошо алганда, орнотулган жардамга толук мүмкүнчүлүк берет.</p>
+<p>R жардамын интернеттен издөө пайдалуу болушу мүмкүн, анткени жалпы ыкмалар жана белгилүү бир R пакеттери боюнча көптөгөн окуу куралдары, блог макалалары жана башка ресурстар бар. R тамгасынын башка колдонулуштарынан айырмалоо үчүн издөө сурамыңызга “R статистикасы”, “R программалык камсыздоосу” же “R пакети” сыяктуу нерселерди кошуу пайдалуу!</p>
 </section>
 </section>
-<section id="настройка-и-подготовка-данных" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Настройка и подготовка данных</h1>
-<section id="необходимые-пакеты-r" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="необходимые-пакеты-r"><span class="header-section-number">3.1</span> Необходимые пакеты R</h2>
-<p>Для установки мы будем использовать пакет <a href="https://pak.r-lib.org/"><em>pak</em></a>, поскольку это более полный подход к управлению пакетами. При желании замените команды pkg на версии, созданные с помощью <em>install.packages()</em>.</p>
-<p>В этом занятии предпочтительно используется набор пакетов <a href="https://tidyverse.org"><em>tidyverse</em></a> для обработки данных, хотя те же задачи можно выполнить в базовом R с помощью других функций. Установите <em>pak</em> и <em>tidyverse</em>, если они еще не установлены в вашей системе. Нам также понадобится <em>reticulate</em> для запуска фрагментов кода Python.</p>
+<section id="маалыматтарды-даярдоо-жана-орнотуу" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Маалыматтарды даярдоо жана орнотуу</h1>
+<section id="керектүү-r-пакеттери" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="керектүү-r-пакеттери"><span class="header-section-number">3.1</span> Керектүү R пакеттери</h2>
+<p>Орнотуу үчүн биз <a href="https://pak.r-lib.org/"><em>pak</em></a> пакетин колдонобуз, анткени ал пакеттерди башкарууга толук мамиле. Кааласаңыз, pkg буйруктарын <em>install.packages()</em> аркылуу түзүлгөн версиялар менен алмаштырыңыз.</p>
+<p>Бул окуу куралында маалыматтарды иштетүү үчүн <a href="https://tidyverse.org"><em>tidyverse</em></a> пакеттер топтому колдонулат, бирок ошол эле тапшырмаларды R базасында башка функцияларды колдонуу менен аткарууга болот. Эгер алар сиздин системаңызда орнотула элек болсо, <em>pak</em> жана <em>tidyverse</em> орнотуңуз. Python кодунун үзүндүлөрүн иштетүү үчүн бизге <em>reticulate</em> да керек болот.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -208,8 +208,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>Обратите внимание, что команду <em>update.packages()</em> можно периодически запускать для проверки наличия более новых версий установленных пакетов.</p>
-<p>Загрузите пакеты, чтобы мы могли с ними работать.</p>
+<p>Орнотулган пакеттердин жаңы версияларын текшерүү үчүн <em>update.packages()</em> буйругун мезгил-мезгили менен иштете аларыңызды эске алыңыз.</p>
+<p>Пакеттерди жүктөп алыңыз, ошондо биз алар менен иштей алабыз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -230,18 +230,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="версии" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="версии"><span class="header-section-number">3.2</span> Версии</h2>
-<p>Ссылки справа предоставляют альтернативные способы доступа к этому контенту. Вы можете выбрать светлый или темный режим HTML, загрузить PDF-файл или файл Word в формате Docx — все они будут содержать один и тот же контент. Также доступны файлы кода на языке R (.R) или Python (.py), если вы хотите отделить код от описания.</p>
+<section id="версиялар" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="версиялар"><span class="header-section-number">3.2</span> Версиялар</h2>
+<p>Оң жактагы шилтемелер бул мазмунга жетүүнүн альтернативдүү жолдорун сунуштайт. Сиз ачык же караңгы HTML режимин тандай аласыз, PDF жүктөп алсаңыз же Word документин .docx форматында жүктөп алсаңыз болот — баары бирдей мазмунду камтыйт. Эгерде сиз кодду сүрөттөмөдөн бөлгүңүз келсе, R (.R) же Python (.py) тилдериндеги код файлдары да жеткиликтүү.</p>
 </section>
-<section id="кыргызский-и-русский-языки" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="кыргызский-и-русский-языки"><span class="header-section-number">3.3</span> Кыргызский и русский языки</h2>
-<p>Кроме того, справа приведены ссылки на машинный перевод этого контента на русский и киргизский языки.</p>
+<section id="кыргыз-жана-орус-тилдеринде" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="кыргыз-жана-орус-тилдеринде"><span class="header-section-number">3.3</span> Кыргыз жана орус тилдеринде</h2>
+<p>Мындан тышкары, бул мазмундун орус жана кыргыз тилдерине машиналык котормолоруна шилтемелер оң жакта берилген.</p>
 </section>
-<section id="поддержка-python" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="поддержка-python"><span class="header-section-number">3.4</span> поддержка Python</h2>
-<p>Теперь загрузим <em>reticulate</em> (только для поддержки Python). Необходимо указать правильное местоположение Python, соответствующее нашей системе.</p>
-<p>Для тех, кто хочет попробовать выполнить те же шаги обработки данных на Python, предоставляется файл Python. Обратите внимание, что файл Python был переведен машинным способом из R.</p>
+<section id="python-колдоосу" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="python-колдоосу"><span class="header-section-number">3.4</span> Python колдоосу</h2>
+<p>Эми <em>reticulate</em> файлын жүктөп алалы (Python колдоосу үчүн гана). Системаңыз үчүн туура Python жайгашкан жерин көрсөтүшүңүз керек.</p>
+<p>Pythonдо ушул эле маалыматтарды иштетүү кадамдарын колдонуп көргүсү келгендер үчүн Python файлы берилет. Python файлы R тилинен машина менен которулганын эске алыңыз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -252,19 +252,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="барометр-центральной-азии" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Барометр Центральной Азии</h1>
-<p>Как вам, вероятно, известно, проект <a href="https://ca-barometer.org/">Барометр Центральной Азии</a> проводит опросы и исследования в странах Центральной Азии (Казахстан, Кыргызстан, Таджикистан, Туркменистан и Узбекистан) и регулярно публикует результаты. За исключением последней волны данных, данные Барометра Центральной Азии можно бесплатно скачать с их веб-сайта, указав контактный адрес электронной почты. Эти опросы изучают современные политические и социальные взгляды и позволяют проводить долгосрочные сравнения, а также межстрановые сравнения.</p>
-<p>На этом первом семинаре мы познакомимся с Барометром Центральной Азии, рассмотрев последние данные (2022 год) по одной стране (Кыргызстан). Второй семинар расширит и углубит наше понимание, добавив к анализу дополнительные годы и страны, а также изучив более сложные методы обработки и анализа данных.</p>
-<section id="понимание-данных" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="понимание-данных"><span class="header-section-number">4.1</span> Понимание данных</h2>
-<p>Прежде чем заниматься программированием или статистическим анализом, первым шагом в работе с реальными данными является понимание их структуры и смысла. Нам нужно знать, какие данные были собраны, как они организованы, и подумать, на какие вопросы они могут ответить. Только тогда мы сможем понять, как правильно приступить к их анализу.</p>
-<p>Для CA Barometer это означает изучение <a href="https://ca-barometer.org/assets/files/projects/central-asia-barometer-survey-wave-12-questionnaire-2022-autumn.pdf">Анкеты (для опроса 2022 года)</a> и <a href="https://ca-barometer.org/assets/files/projects/central-asia-barometer-survey-wave-12-methods-report-2022-autumn.pdf">Отчета о методах</a> за этот год.</p>
+<section id="борбордук-азия-барометри" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Борбордук Азия Барометри</h1>
+<p>Сиз билгендей, <a href="https://ca-barometer.org/">Борбордук Азия Барометри</a> долбоору Борбордук Азия өлкөлөрүндө (Казакстан, Кыргызстан, Тажикстан, Түркмөнстан жана Өзбекстан) сурамжылоолорду жана изилдөөлөрдү жүргүзөт жана жыйынтыктарын үзгүлтүксүз жарыялайт. Акыркы маалыматтар толкунунан тышкары, Борбордук Азия Барометринин маалыматтарын байланыш электрондук почта дарегин берүү менен алардын веб-сайтынан акысыз жүктөп алууга болот. Бул сурамжылоолор учурдагы саясий жана социалдык мамилелерди изилдейт жана узак мөөнөттүү жана өлкөлөр аралык салыштырууларды жүргүзүүгө мүмкүндүк берет.</p>
+<p>Бул биринчи семинарда биз бир өлкө (Кыргыстан) боюнча акыркы маалыматтарды (2022) карап чыгуу менен Борбордук Азия Барометри менен тааныштырабыз. Экинчи семинар анализге кошумча жылдарды жана өлкөлөрдү кошуу жана маалыматтарды иштетүү жана талдоо боюнча татаалыраак ыкмаларды изилдөө менен биздин түшүнүгүбүздү кеңейтет жана тереңдетет.</p>
+<section id="маалыматтарды-түшүнүү" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="маалыматтарды-түшүнүү"><span class="header-section-number">4.1</span> Маалыматтарды түшүнүү</h2>
+<p>Программалоого же статистикалык анализге киришерден мурун, реалдуу маалыматтар менен иштөөнүн биринчи кадамы - алардын түзүлүшүн жана маанисин түшүнүү. Биз кандай маалыматтар чогултулганын, кантип уюштурулганын билип, кандай суроолорго жооп бере аларын эске алышыбыз керек. Ошондо гана биз аны кантип туура талдоону түшүнө алабыз.</p>
+<p>CA Barometer үчүн бул ушул жылга карата <a href="https://ca-barometer.org/assets/files/projects/central-asia-barometer-survey-wave-12-questionnaire-2022-autumn.pdf">Анкета (2022-жылдагы сурамжылоо үчүн)</a> жана <a href="https://ca-barometer.org/assets/files/projects/central-asia-barometer-survey-wave-12-methods-report-2022-autumn.pdf">Методдор боюнча отчет</a> карап чыгууну билдирет.</p>
 </section>
 </section>
-<section id="загрузка-и-импорт-данных" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Загрузка и импорт данных</h1>
-<p>Мы загружаем данные из <a href="https://ca-barometer.org/">Центральноазиатского барометра</a> по адресу <a href="https://ca-barometer.org/assets/files/projects/cab-survey-wave-12-excel-kyrgyzstan-kyrgyzstan-2022-autumn.xls">https://ca-barometer.org/assets/files/projects/cab-survey-wave-12-excel-kyrgyzstan-kyrgyzstan-2022-autumn.xlsx</a></p>
+<section id="маалыматтарды-жүктөө-жана-импорттоо" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Маалыматтарды жүктөө жана импорттоо</h1>
+<p>Биз <a href="https://ca-barometer.org/">Борбордук Азия Барометринен маалыматтарды</a> дарегинен <a href="https://ca-barometer.org/assets/files/projects/cab-survey-wave-12-excel-kyrgyzstan-kyrgyzstan-2022-autumn.xls">https://ca-barometer.org/assets/files/projects/cab-survey-wave-12-excel-kyrgyzstan-kyrgyzstan-2022-autumn.xlsx</a> жүктөп алабыз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -300,17 +300,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="обработка-данных" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Обработка данных</h1>
-<section id="выбор-и-наименование" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="выбор-и-наименование"><span class="header-section-number">6.1</span> Выбор и наименование</h2>
-<p>Для анализа мы выберем интересные переменные из анкеты. Также мы изменим их названия на более запоминающиеся.</p>
-<p>Мы хотим провести исследование по нескольким параметрам:</p>
-<ul>
-<li>язык, регион, доход, пол</li>
-</ul>
-<p>и связать это с мнениями. Мы можем потратить некоторое время на изучение анкеты, чтобы увидеть, как обозначены эти переменные.</p>
-<p>Обратите внимание, что MM4 — это код страны, но мы уже загрузили файл по Киргизии, поэтому нам не нужно явно его выбирать. Также обратите внимание, что этническая группа уже обозначена как «EthnicGrp». Доступ к другим переменным мы сделаем более интуитивно понятным, переименовав их.</p>
+<section id="маалыматтарды-иштетүү" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Маалыматтарды иштетүү</h1>
+<section id="тандоо-жана-ат-коюу" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="тандоо-жана-ат-коюу"><span class="header-section-number">6.1</span> Тандоо жана ат коюу</h2>
+<p>Анализ үчүн биз анкетанын ичинен кызыктуу өзгөрмөлөрдү тандайбыз. Ошондой эле, алардын аттарын эсте каларлык кылып өзгөртөбүз.</p>
+<p>Биз бир нече параметрлер боюнча изилдөө жүргүзгүбүз келет:</p>
+<p>тил, аймак, киреше, жыныс</p>
+<p>жана аларды пикирлер менен байланыштыргыбыз келет. Бул өзгөрмөлөр кандайча белгиленгенин көрүү үчүн анкетаны карап чыгууга бир аз убакыт бөлө алабыз.</p>
+<p>MM4 өлкөнүн коду экенин, бирок биз буга чейин Кыргызстан файлын жүктөп койгонбуз, андыктан аны так тандоонун кажети жок экенин эске алыңыз. Ошондой эле, этникалык топ мурунтан эле “EthnicGrp” деп белгиленгенин эске алыңыз. Башка өзгөрмөлөрдүн атын өзгөртүү менен аларга жетүүнү жеңилдетебиз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -369,9 +367,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="описательная-статистика" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="описательная-статистика"><span class="header-section-number">6.2</span> Описательная статистика</h2>
-<p>Давайте рассмотрим несколько из этих переменных и посмотрим, как они распределены. Простая команда <em>table</em> поможет вам получить первоначальное представление о данных. Хотя некоторые большие наборы данных сложно интуитивно понять, для такого рода данных в социальных науках нет ничего лучше, чем потратить время на изучение данных, прежде чем переходить к более сложному анализу. Мы также можем обнаружить выбросы или проблемы, которые необходимо исправить, прежде чем двигаться дальше.</p>
+<section id="сүрөттөмө-статистика" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="сүрөттөмө-статистика"><span class="header-section-number">6.2</span> Сүрөттөмө статистика</h2>
+<p>Келгиле, бул өзгөрмөлөрдүн бир нечесин карап чыгып, алардын кандайча бөлүштүрүлгөнүн көрөлү. Жөнөкөй <em>table</em> буйругу маалыматтарды баштапкы түшүнүүгө жардам берет. Айрым чоң маалымат топтомдорун интуитивдик түрдө түшүнүү кыйын болушу мүмкүн, бирок коомдук илимдердеги мындай маалыматтар үчүн татаалыраак анализге өтүүдөн мурун маалыматтарды изилдөөгө убакыт бөлүүдөн өткөн жакшы нерсе жок. Ошондой эле, андан ары өтүүдөн мурун оңдолушу керек болгон четтөөлөрдү же көйгөйлөрдү аныктай алабыз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -481,9 +479,9 @@ Income                 Female Male
 </div>
 </div>
 </section>
-<section id="перекодирование-данных" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="перекодирование-данных"><span class="header-section-number">6.3</span> Перекодирование данных</h2>
-<p>Одна из обнаруженных проблем заключается в том, что доход отображается по категориям, в виде диапазонов. Если мы хотим рассматривать доход как число, нам придется его перекодировать. В приведенном ниже коде мы устанавливаем для каждого диапазона приблизительное среднее значение, используя команду <em>recode_values</em>.</p>
+<section id="маалыматтарды-кайра-коддоо" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="маалыматтарды-кайра-коддоо"><span class="header-section-number">6.3</span> Маалыматтарды кайра коддоо</h2>
+<p>Биз аныктаган көйгөйлөрдүн бири - киреше категориялар боюнча, диапазондор катары көрсөтүлөт. Эгерде биз кирешени сан катары карагыбыз келсе, аны кайра коддошубуз керек болот. Төмөндөгү коддо биз <em>recode_values</em> буйругун колдонуп, ар бир диапазон үчүн болжолдуу орточо маанини коёбуз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -503,7 +501,7 @@ Income                 Female Male
 <span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>Мы повторно подключаем данные, чтобы убедиться, что новая переменная Income_Numeric легкодоступна, а затем проверяем, как всё получилось.</p>
+<p>Жаңы Income_Numeric өзгөрмөсүнө оңой жетүүгө болорун текшерүү үчүн маалыматтарды кайра туташтырабыз, андан кийин баары кандай иштегенин текшеребиз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -557,7 +555,7 @@ Income                 Female Male
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/Income_Numeric-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/Income_Numeric-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -601,9 +599,9 @@ mean in group Female   mean in group Male
 </div>
 </section>
 </section>
-<section id="графики---визуализация-данных" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Графики - Визуализация данных</h1>
-<p>Мы можем выбрать любую общую тему для обсуждения, например, какое приложение для обмена сообщениями используют люди. На самом деле, в Кыргызстане все пользуются WhatsApp, так что, возможно, это не так интересно! Давайте выберем что-нибудь более общее, например, движется ли страна в правильном или неправильном направлении.</p>
+<section id="графика---маалыматтарды-визуалдаштыруу" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Графика - Маалыматтарды визуалдаштыруу</h1>
+<p>Биз талкуу үчүн каалаган жалпы теманы тандай алабыз, мисалы, адамдар кайсы билдирүү жазышуу колдонмосун колдонушат. Чындыгында, Кыргызстандагы ар бир адам WhatsApp колдонот, андыктан бул анчалык кызыктуу эмес болушу мүмкүн! Келгиле, өлкө туура багытта бара жатабы же туура эмес багытта бара жатабы, мисалы, жалпыраак нерсени тандайлы.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -689,7 +687,7 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
   Wrong direction      6    4    5    4    6     8    12    18    22    99</code></pre>
 </div>
 </div>
-<p>Измените код, удалив слова «Не знаю» и «Отказано».</p>
+<p>“Билбейм” жана “Четке кагылды” деген сөздөрдү алып салуу менен кодду өзгөртүңүз.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -757,9 +755,9 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
     MM4, MM5, MM6, MM7, MM8, MM9</code></pre>
 </div>
 </div>
-<section id="иллюстративные-графики" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="иллюстративные-графики"><span class="header-section-number">7.1</span> Иллюстративные графики</h2>
-<p>Вот несколько наглядных графиков. На данном этапе мы не стремимся сделать их красивыми, а просто хотим быстро понять наши данные.</p>
+<section id="иллюстрациялык-графика" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="иллюстрациялык-графика"><span class="header-section-number">7.1</span> Иллюстрациялык графика</h2>
+<p>Бул жерде бир нече визуалдык графиктер келтирилген. Бул этапта биз аларды кооз кылууга аракет кылбайбыз; биз жөн гана маалыматтарыбызды тез түшүнгүбүз келет.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -773,7 +771,7 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/illustrative%20plots-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/illustrative%20plots-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -788,7 +786,7 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/illustrative%20plots-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/illustrative%20plots-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -799,7 +797,7 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/illustrative%20plots-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/illustrative%20plots-3.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -810,7 +808,7 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/illustrative%20plots-4.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/illustrative%20plots-4.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -821,18 +819,18 @@ D1                  1400 3400 5000 7000 9000 11000 14000 18000 24000 40000
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="CA_Barometer_1_dark_ru_files/figure-html/illustrative%20plots-5.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="CA_Barometer_1_dark_ky_files/figure-html/illustrative%20plots-5.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 </section>
-<section id="дальнейший-статистический-анализ" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Дальнейший статистический анализ</h1>
-<section id="логистическая-регрессия" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="логистическая-регрессия"><span class="header-section-number">8.1</span> Логистическая регрессия</h2>
-<p>В качестве примера статистического анализа можно попробовать использовать логистическую регрессию для прогнозирования правильного ответа на вопрос о направлении движения. Логистическая регрессия — подходящий метод, когда результат представляет собой бинарный выбор (да/нет, верно/неверно, правильно/неверно).</p>
+<section id="андан-ары-статистикалык-талдоо" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Андан ары статистикалык талдоо</h1>
+<section id="логистикалык-регрессия" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="логистикалык-регрессия"><span class="header-section-number">8.1</span> Логистикалык регрессия</h2>
+<p>Статистикалык анализдин мисалы катары, кыймылдын багыты жөнүндөгү суроого туура жоопту алдын ала айтуу үчүн логистикалык регрессияны колдонуп көрсөк болот. Логистикалык регрессия - бул натыйжа экилик тандоо болгондо (ооба/жок, чын/жалган, туура/туура эмес) ылайыктуу ыкма.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -872,20 +870,20 @@ Number of Fisher Scoring iterations: 13</code></pre>
 </div>
 </section>
 </section>
-<section id="другие-возможности" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Другие возможности</h1>
-<p>Это лишь некоторые заметки о дополнительных интересных переменных в данных, хотя вы можете выбрать свои собственные и изучить их подробнее.</p>
-<p>Вопрос B13 — «Эмигрируют ли русские в ваш регион?» — можно проанализировать по регионам.</p>
-<p>Вопрос E17 — «Как долго продлится конфликт с Украиной?» — задан в 2022 году.</p>
-<p>Вопрос G3b — «Отношение к президенту Жапарову?» — какие аспекты были бы интересны для анализа?</p>
+<section id="башка-варианттар" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Башка варианттар</h1>
+<p>Булар маалыматтардагы кошумча кызыктуу өзгөрмөлөр боюнча бир нече гана эскертүүлөр, бирок сиз өзүңүздү тандап, аларды кененирээк изилдей аласыз.</p>
+<p>B13 суроосу, “Орустар сиздин аймагыңызга эмиграцияланып жатышабы?”, аймактар боюнча талданышы мүмкүн.</p>
+<p>E17 суроосу, “Украина менен болгон чыр-чатак канчага созулат?”, 2022-жылы берилген.</p>
+<p>G3b суроосу, “Президент Жапаровго карата мамиле?”, кайсы аспектилерди талдоо кызыктуу болмок?</p>
 </section>
-<section id="заключение" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Заключение</h1>
-<p>В анализе данных нет единой точки остановки. Продолжайте, пока не получите полное понимание данных и их взаимодействия с вопросами, на которые вы пытаетесь ответить. Во второй части этой серии семинаров, <a href="https://ryanwomack.com/data_topics/central_asia_barometer_2/CA_Barometer_2.html">Барометр Центральной Азии 2</a>, будут рассмотрены более сложные методы и комбинации данных.</p>
-<p>Дополнительные сведения о методах анализа данных см. в разделах <a href="https://www.ryanwomack.com/data_topics/data_analysis_1/data_analysis_1.html">Анализ данных 1</a> и <a href="https://www.ryanwomack.com/data_topics/data_analysis_2/data_analysis_2.html">Анализ данных 2</a>.</p>
-<section id="r-для-анализа-данных-книга-r-for-data-science" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="r-для-анализа-данных-книга-r-for-data-science"><span class="header-section-number">10.1</span> R для анализа данных [книга <em>R for Data Science</em>]</h2>
-<p>Для получения дополнительной информации об обработке данных обратитесь к книге <a href="https://r4ds.hadley.nz/">R for Data Science</a>. Также ознакомьтесь с пакетом <a href="https://www.tidymodels.org/">tidymodels</a>, предназначенным для моделирования и машинного обучения с использованием принципов tidyverse.</p>
+<section id="жыйынтык" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Жыйынтык</h1>
+<p>Маалыматтарды талдоодо бирдиктүү токтоо чекити жок. Маалыматтарды жана алардын сиз жооп берүүгө аракет кылып жаткан суроолорго кандай тиешеси бар экенин толук түшүнгөнгө чейин уланта бериңиз. Бул семинар сериясынын экинчи бөлүгү, <a href="https://ryanwomack.com/data_topics/central_asia_barometer_2/CA_Barometer_2.html">Борбордук Азия барометри 2</a>, татаалыраак ыкмаларды жана маалыматтардын айкалыштарын изилдейт.</p>
+<p>Маалыматтарды талдоо ыкмалары жөнүндө көбүрөөк маалымат алуу үчүн <a href="https://www.ryanwomack.com/data_topics/data_analysis_1/data_analysis_1.html">Маалыматтарды талдоо 1</a> жана <a href="https://www.ryanwomack.com/data_topics/data_analysis_2/data_analysis_2.html">Маалыматтарды талдоо 2</a> караңыз.</p>
+<section id="маалымат-таануу-үчүн-r-китеп-r-for-data-science" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="маалымат-таануу-үчүн-r-китеп-r-for-data-science"><span class="header-section-number">10.1</span> Маалымат таануу үчүн R [китеп <em>R for Data Science</em>]</h2>
+<p>Маалыматтарды иштетүү боюнча көбүрөөк маалымат алуу үчүн <a href="https://r4ds.hadley.nz/">R for Data Science</a> китебин караңыз. Ошондой эле tidyverse принциптерин колдонуп моделдөө жана машиналык окутуу үчүн иштелип чыккан <a href="https://www.tidymodels.org/">tidymodels пакетин</a> карап көрүңүз.</p>
 </section>
 </section>
 
