@@ -19,11 +19,9 @@ format:
     colorlinks: true
     papersize: A4
   docx: default
-theme: litera
+theme: cyborg
 include-in-header: 
   text: |
-    \usepackage{fvextra}
-    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
     
 ---
 
